@@ -21,34 +21,13 @@ def about():
             margin: 10px 0;
             border-radius: 5px;
         }
-        .feedback-btn {
-            background-color: #00274D;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .feedback-btn:hover {
-            background-color: #00509e;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-    # Title Section
-    st.markdown(
-        """
-        <div class="title-box">
-            <h1>Welcome to the MIT News Chatbot</h1>
-            <p>Your intelligent assistant for exploring MIT News articles</p>
-        </div>
+      
         """,
         unsafe_allow_html=True
     )
 
     # Overview Section
+    st.markdown("<br>", unsafe_allow_html=True)
     st.subheader("Overview")
     st.markdown(
         """
@@ -60,37 +39,39 @@ def about():
         unsafe_allow_html=True
     )
 
-    # Features Section
-    st.subheader("Key Features")
-    features = [
-        "**Comprehensive Knowledge**: Access the latest articles and archives from MIT News.",
-        "**Conversational AI**: Retains the context of your queries for a seamless experience.",
-        "**Effortless Search**: Type your question, and the bot retrieves and synthesizes relevant information."
-    ]
-    for feature in features:
-        st.markdown(f"- {feature}")
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.subheader("Features")
+    st.markdown(
+        """
+        - **Conversational Q&A**: Ask questions and get contextual answers.
+        - **Context Retention**: Retain the flow of conversation across multiple queries.
+        - **Data Analysis**: Analyze and explore articles by authors, categories, dates, and keywords.
+        """
+    )
 
     # Visual Divider
     st.markdown("---")
 
     # Visual Element - MIT Logo
-    # st.image(
-    #     "https://news.mit.edu/sites/all/themes/mit2016/images/logo-black.svg",
-    #     caption="Powered by MIT News",
-    #     use_container_width=True
-    # )
-
+    st.image(
+        "https://brand.mit.edu/sites/default/files/styles/image_text_2x/public/2023-08/MIT-logo-red-textandimage.png?itok=RNoAwZvy",
+        caption="Powered by MIT News",
+        use_container_width=True
+    )
+    
     # CTA to Chat Page
-    st.subheader("Try the Chatbot")
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.subheader("Try the tool")
     st.markdown(
         """
-        Curious to see it in action? Head over to the **Chat Page** from the navigation bar and start exploring!
+        Curious to see it in action? Head over to the navigation bar and start exploring!
         """
     )
     # if st.button("Go to Chat Page"):
     #     st.query_params(page="Chat")
 
     # How It Works Section
+    st.markdown("<br>", unsafe_allow_html=True)
     st.subheader("How It Works")
     st.markdown(
         """
@@ -103,15 +84,17 @@ def about():
         unsafe_allow_html=True
     )
 
-    # Feedback Section
-    st.subheader("Have Feedback?")
-    st.markdown("We'd love to hear your thoughts! Share your feedback below:")
-    components.html(
-        """
-        <form action="https://formspree.io/f/xknypbwp" method="POST">
-            <textarea name="feedback" rows="4" cols="40" placeholder="Type your feedback here..." style="width:100%; margin-bottom: 10px;"></textarea><br>
-            <button type="submit" class="feedback-btn">Submit Feedback</button>
-        </form>
-        """,
-        height=200
-    )
+    # Technologies Used
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.subheader("Tech Stack (Python based)")
+    st.markdown(
+    """
+    #### 📚 Project Dependencies and Documentation
+
+    - **[OpenAI API](https://platform.openai.com/docs/)**: Provides access to language models for generating responses.
+    - **[LangChain](https://docs.langchain.com/)**: A framework for building applications powered by language models.
+    - **[Elasticsearch](https://www.elastic.co/guide/index.html)**: A powerful search and analytics engine used as the data storage platform and retriever for the chatbot.
+    - **[Streamlit](https://docs.streamlit.io/)**: A framework for building interactive user interfaces (UI).
+    """,
+    unsafe_allow_html=True
+)

@@ -15,8 +15,7 @@ st.set_page_config(
 )
 
 # Title and subtitle
-st.title("🤖 QA Answering Bot")
-st.subheader("Powered by OpenAI API")
+st.title("🤖 InsightBot: QA and Data Wizard")
 
 def main():
     with st.sidebar:
