@@ -1,21 +1,4 @@
-# from elasticsearch import Elasticsearch
-
-# def analysis():
-#     """
-#     Data Analysis feature
-#     """
-#     # First load and show the dataset 
-    
-#     # Connect to elasticsearch client 
 import os
-    
-#     # Initialize Elasticsearch client
-#     es = Elasticsearch(
-#         cloud_id=ELASTIC_CLOUD_ID,
-#         basic_auth=("elastic", ELASTIC_PASSWORD)
-#     )  
-    
-    
 import streamlit as st
 from langchain.vectorstores import ElasticsearchStore
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -25,16 +8,7 @@ from session_keys import ensure_keys_in_session
 # Elasticsearch vectorstore Setup
 def connect_vector_store():
     """Connect to Elasticsearch vector store."""
-    # if not st.session_state["elastic_database_id"] or "elastic_database_id" not in st.session_state:
-    #     st.session_state["elastic_database_id"] = "ab9fc665e06642b4b2c99c5f9898e875:dXMtY2VudHJhbDEuZ2NwLmNsb3VkLmVzLmlvJDg3MzIwMzg0YWMzNzRjNTJiYmQ3YWFkYjI4NWUxNjExJDIxMDFiZTgzNjg5ODQ0MmFhMzg4ZTMzYzU5MTdmOTlh"
-        
-    # if not st.session_state["elastic_api_key"] or "elastic_api_key" not in st.session_state:
-    #     st.session_state["elastic_api_key"] = "WUoyVkpKTUJ0ZTlkVlhESWtSVDQ6eGUwY1dzcmlSbGE4bW5iY2gxQl9CZw=="
-        
-    # if not st.session_state["chatbot_api_key"] or "chatbot_api_key" not in st.session_state:
-    #     st.session_state["chatbot_api_key"] = "sk-JDd8XASldxnf4JlfzqcFX6IZkRp88UQSOuS6MqsBgLT3BlbkFJoaFWr04LuZoWZQlTBdTzxzbQ7tgFTD2iXbICVfLxcA"
-
-    # os.environ["OPENAI_API_KEY"] = st.session_state["chatbot_api_key"]
+    
     ensure_keys_in_session()
     
     try:

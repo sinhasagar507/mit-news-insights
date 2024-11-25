@@ -163,3 +163,5 @@ cython_debug/
 
 # Python files
 session_keys.py
+1_0_elasticsearch_analysis.ipynb
+1_0_elasticsearch_rag.ipynb

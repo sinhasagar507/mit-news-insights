@@ -15,11 +15,6 @@ from session_keys import ensure_keys_in_session
 
 # Lazy initialization of LLM
 def get_llm():
-    # if "chatbot_api_key" not in st.session_state or not st.session_state["chatbot_api_key"]:
-    #     # If the API key is missing, return None (or handle it silently)
-    #     st.session_state["chatbot_api_key"] = "sk-JDd8XASldxnf4JlfzqcFX6IZkRp88UQSOuS6MqsBgLT3BlbkFJoaFWr04LuZoWZQlTBdTzxzbQ7tgFTD2iXbICVfLxcA"
-    # # Set the OpenAI API key as an environment variable
-    # os.environ["OPENAI_API_KEY"] = st.session_state["chatbot_api_key"]
     ensure_keys_in_session()
     # Initialize and return the LLM instance
     return ChatOpenAI(model="gpt-4o-mini")
