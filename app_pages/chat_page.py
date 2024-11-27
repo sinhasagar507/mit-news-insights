@@ -45,16 +45,3 @@ def chat():
         message = response["answer"]
         st.session_state["chat_history"].append({"role": "assistant", "content": message})
         st.chat_message("assistant").write(message)
-            
-    
-
-    
-        
-    
-            
-
-        
-    
-
-    
-    

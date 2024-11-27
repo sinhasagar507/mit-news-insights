@@ -80,7 +80,3 @@ def rag():
         rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
         
         return rag_chain
-
-def get_response():
-    """Get a response from the ChatGPT API."""
-    pass

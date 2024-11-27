@@ -12,6 +12,3 @@ def ensure_keys_in_session():
 
     if "elastic_api_key" not in st.session_state or not st.session_state["elastic_api_key"]:
         st.session_state["elastic_api_key"] = os.environ["ELASTIC_API_KEY"]
-
-    # Set environment variable for OpenAI
-    # os.environ["OPENAI_API_KEY"] = st.session_state["chatbot_api_key"]

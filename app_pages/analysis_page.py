@@ -4,7 +4,7 @@ from langchain.vectorstores import ElasticsearchStore
 from langchain.embeddings.openai import OpenAIEmbeddings
 from sessionkeys.session_keys import ensure_keys_in_session
 
-# Elasticsearch vector_store Setup
+# Elasticsearch setup
 def connect_vector_store():
     """Connect to Elasticsearch vector store."""
     ensure_keys_in_session()

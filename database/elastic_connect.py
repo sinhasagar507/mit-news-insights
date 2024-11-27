@@ -4,7 +4,6 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 import streamlit as st
 from sessionkeys.session_keys import ensure_keys_in_session
 
-# All the required environment variables 
 ELASTIC_INDEX_NAME = "openai_mit_llama_index"
 
 def retrieve_vector_store():
