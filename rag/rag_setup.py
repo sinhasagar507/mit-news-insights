@@ -1,5 +1,6 @@
 import os
 from typing import List, Any
+import streamlit as st
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import BaseRetriever, Document
 from langchain.chains import create_history_aware_retriever
@@ -8,16 +9,13 @@ from langchain_core.prompts import MessagesPlaceholder
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from pydantic import Field
-from elastic_connect import retrieve_vector_store
-import streamlit as st
-
-from session_keys import ensure_keys_in_session
+from database.elastic_connect import retrieve_vector_store
+from sessionkeys.session_keys import ensure_keys_in_session
 
 # Lazy initialization of LLM
 def get_llm():
     ensure_keys_in_session()
-    # Initialize and return the LLM instance
-    return ChatOpenAI(model="gpt-4o-mini")
+    return ChatOpenAI(model="gpt-4o-mini", temperature=st.session_state["temperature"], max_tokens=st.session_state["tokens"])
 
 # Use `get_llm` to retrieve the LLM instance when needed
 LLM = get_llm()

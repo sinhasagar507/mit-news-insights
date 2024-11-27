@@ -1,0 +1,8 @@
+elasticsearch
+streamlit 
+streamlit-extras 
+openai 
+tiktoken
+langchain
+langchain-community
+langchain-elasticsearch

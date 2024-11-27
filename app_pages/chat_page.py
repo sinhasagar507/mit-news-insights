@@ -1,9 +1,7 @@
 import os
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
-from rag_setup import rag
-from session_keys import ensure_keys_in_session
-from utils import clear_chat_history
+from sessionkeys.session_keys import ensure_keys_in_session
 
 def clear_chat_history():
     """Clears the chat history from the session state."""
@@ -20,6 +18,8 @@ def chat():
             
     ensure_keys_in_session()
     
+    from rag.rag_setup import rag
+
     # Initialize session state
     if "chat_history" not in st.session_state:
         st.session_state["chat_history"] = [{"role": "assistant", "content": "How can I help you?"}]

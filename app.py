@@ -1,10 +1,9 @@
 import warnings 
 warnings.filterwarnings("ignore")
-
 import streamlit as st
-from analysis_page import analysis
-from about_page import about
-from chat_page import chat
+from app_pages.analysis_page import analysis
+from app_pages.about_page import about
+from app_pages.chat_page import chat
 
 # Configure page
 st.set_page_config(
@@ -15,7 +14,7 @@ st.set_page_config(
 )
 
 # Title and subtitle
-st.title("🤖 InsightBot: QA and Data Wizard")
+st.title("🤖 Newsbot: QA and Data Wizard")
 
 def main():
     with st.sidebar:
