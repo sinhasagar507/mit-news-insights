@@ -2,7 +2,7 @@ import os
 from langchain_elasticsearch import ElasticsearchStore
 from langchain.embeddings.openai import OpenAIEmbeddings
 import streamlit as st
-from sessionkeys.session_keys import ensure_keys_in_session
+from session_keys.session_keys import ensure_keys_in_session
 
 ELASTIC_INDEX_NAME = "openai_mit_llama_index"
 

@@ -10,7 +10,7 @@ from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from pydantic import Field
 from database.elastic_connect import retrieve_vector_store
-from sessionkeys.session_keys import ensure_keys_in_session
+from session_keys.session_keys import ensure_keys_in_session
 
 # Lazy initialization of LLM
 def get_llm():

@@ -2,7 +2,7 @@ import os
 import streamlit as st
 from langchain.vectorstores import ElasticsearchStore
 from langchain.embeddings.openai import OpenAIEmbeddings
-from sessionkeys.session_keys import ensure_keys_in_session
+from session_keys.session_keys import ensure_keys_in_session
 
 # Elasticsearch setup
 def connect_vector_store():

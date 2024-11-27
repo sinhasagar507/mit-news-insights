@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
-from sessionkeys.session_keys import ensure_keys_in_session
+from session_keys.session_keys import ensure_keys_in_session
 
 def clear_chat_history():
     """Clears the chat history from the session state."""
