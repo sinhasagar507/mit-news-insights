@@ -52,10 +52,6 @@
 
 ---
 
----
-
----
-
 ## **Screenshots**
 
 Below are screenshots of the key pages in the application:
