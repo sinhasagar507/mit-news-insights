@@ -49,7 +49,6 @@
 - **Backend**: [Python](https://www.python.org/)
 - **APIs**: [OpenAI API](https://platform.openai.com/docs/)
 - **Search Engine**: [Elasticsearch](https://www.elastic.co/)
-- **Frameworks**: [LangChain](https://docs.langchain.com/)
 
 ---
 
