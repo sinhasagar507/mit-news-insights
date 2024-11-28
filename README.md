@@ -52,6 +52,28 @@
 
 ---
 
+---
+
+---
+
+## **Screenshots**
+
+Below are screenshots of the key pages in the application:
+
+### **1. About Page**
+![About Page](/Applications/saggydev/projects_learning/GenAI_bonus_app/app_pages/about_page.py)
+
+### **2. Chat Page**
+![Chat Page](/Applications/saggydev/projects_learning/GenAI_bonus_app/images/chat_page.png)
+
+### **3. Analysis Page**
+![Analysis Page](/Applications/saggydev/projects_learning/GenAI_bonus_app/images/analysis_page.png)
+
+---
+
+---
+
+
 ## **Installation**
 
 Follow these steps to set up and run the application locally:
