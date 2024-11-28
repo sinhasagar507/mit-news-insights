@@ -1,6 +1,6 @@
 # **MIT News Chatbot**
 
-🤖 **MIT News Chatbot** is a Streamlit-based application that enables users to interact with articles from [MIT News](https://news.mit.edu/) through conversational AI. The application combines advanced natural language processing with Elasticsearch-based retrieval systems, allowing users to query, analyze, and explore articles seamlessly. The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/deepanshudalal09/mit-ai-news-published-till-2023)
+🤖 **MIT News Chatbot** is a Streamlit-based application that enables users to interact with articles from [MIT News](https://news.mit.edu/) through conversational AI. The application combines advanced natural language processing with Elasticsearch-based retrieval systems, allowing users to query, analyze, and explore articles seamlessly. The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/deepanshudalal09/mit-ai-news-published-till-2023). 
 
 ---
 
