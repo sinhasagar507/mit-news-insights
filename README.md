@@ -90,14 +90,28 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### **4. Add your API keys to environment**
+### **4. Create Accounts and Get API Keys**
+
+#### **OpenAI**
+1. Visit [OpenAI](https://platform.openai.com/signup) and create an account if you don’t already have one.
+2. Once logged in, navigate to the [API Keys section](https://platform.openai.com/account/api-keys).
+3. Generate a new API key and copy it for use in the next step.
+
+#### **Elasticsearch**
+1. Visit [Elastic Cloud](https://cloud.elastic.co/registration) and create an account.
+2. Set up a deployment in the Elastic Cloud console.
+3. Once the deployment is ready:
+   - Copy your **Cloud ID** from the “Manage Deployment” page.
+   - Generate an API key in the “Security” section of the Elastic Cloud dashboard.
+
+### **5. Add your API keys to environment**
 ```bash
 export OPENAI_API_KEY="your-openai-api-key"
 export ELASTIC_CLOUD_ID="your-elasticsearch-cloud-id"
 export ELASTIC_API_KEY="your-elasticsearch-api-key"
 ```
 
-### **5. Run the application**
+### **6. Run the application**
 ```bash
 streamlit run app.py
 ```
