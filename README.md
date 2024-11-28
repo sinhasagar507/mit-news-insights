@@ -75,7 +75,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### **4. Add your API keys to environment and load them**
+### **4. Add your API keys to environment**
 ```bash
 export OPENAI_API_KEY="your-openai-api-key"
 export ELASTIC_CLOUD_ID="your-elasticsearch-cloud-id"
@@ -84,5 +84,5 @@ export ELASTIC_API_KEY="your-elasticsearch-api-key"
 
 ### Run the application
 ```bash
-export streamlit run app.py
+streamlit run app.py
 ```
