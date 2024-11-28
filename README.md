@@ -66,12 +66,13 @@ Follow these steps to set up and run the application locally:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
 ### **3. Install Dependencies**
-`pip install -r requirements.txt`
+pip install -r requirements.txt
 
 ### **4. Add your API keys to environment and load them**
-```bash
+
 export OPENAI_API_KEY="your-openai-api-key"
 export ELASTIC_CLOUD_ID="your-elasticsearch-cloud-id"
 export ELASTIC_API_KEY="your-elasticsearch-api-key"
