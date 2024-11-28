@@ -46,12 +46,10 @@
 ## **Tech Stack**
 
 - **Frontend**: [Streamlit](https://streamlit.io)
-- **Backend**: Python
+- **Backend**: [Python](https://www.python.org/)
 - **APIs**: [OpenAI API](https://platform.openai.com/docs/)
 - **Search Engine**: [Elasticsearch](https://www.elastic.co/)
-- **Frameworks**:
-  - [LangChain](https://docs.langchain.com/): For advanced AI and retrieval-augmented generation (RAG).
-  - Custom retriever logic for Elasticsearch integration.
+- **Frameworks**: [LangChain](https://docs.langchain.com/)
 
 ---
 
@@ -82,7 +80,7 @@ export ELASTIC_CLOUD_ID="your-elasticsearch-cloud-id"
 export ELASTIC_API_KEY="your-elasticsearch-api-key"
 ```
 
-### Run the application
+### **5. Run the application**
 ```bash
 streamlit run app.py
 ```
