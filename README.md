@@ -33,7 +33,7 @@
 - Implements **Retrieval-Augmented Generation (RAG)**:
   - Retrieves relevant articles using Elasticsearch.
   - Reformulates questions to provide contextually accurate answers.
-  - Uses GPT-4 for intelligent and educational responses.
+  - Uses `GPT-4o-mini` for intelligent and educational responses.
 
 ### **5. Session Key Management**
 - Keys are securely managed using the `session_keys` module, which retrieves environment variables for:
