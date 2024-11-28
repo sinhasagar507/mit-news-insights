@@ -101,8 +101,8 @@ pip install -r requirements.txt
 1. Visit [Elastic Cloud](https://cloud.elastic.co/registration) and create an account.
 2. Set up a deployment in the Elastic Cloud console.
 3. Once the deployment is ready:
-   - Copy your **Cloud ID** from the “Manage Deployment” page.
-   - Generate an API key in the “Security” section of the Elastic Cloud dashboard.
+   - Copy your **Cloud ID** from the **Manage Deployment** page.
+   - Generate an **API key** in the **Security** section of the Elastic Cloud dashboard.
 
 ### **5. Add your API keys to environment**
 ```bash
