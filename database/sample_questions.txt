@@ -1,0 +1,6 @@
+Some sample questions to ask in sequence (demonstrates conversational history):
+1. What does the MIT news resource talk about ther J-WAFS Grand challenge?
+2. Who were the first awardees of the challenge?
+3. What was your last reply about?
+4. Who are the outside collaborators with which the researchers worked on the project?
+5. What was the first question which I posed to you?
