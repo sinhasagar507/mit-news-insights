@@ -1,6 +1,6 @@
 # **MIT News Chatbot**
 
-🤖 **MIT News Chatbot** is a Streamlit-based application that enables users to interact with articles from [MIT News](https://news.mit.edu/) through conversational AI. The application combines advanced natural language processing with Elasticsearch-based retrieval systems, allowing users to query, analyze, and explore articles seamlessly. The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/deepanshudalal09/mit-ai-news-published-till-2023). 
+🤖 **MIT News Chatbot** is a Streamlit-based application that enables users to interact with articles from [MIT News](https://news.mit.edu/) through conversational AI. The application combines advanced natural language processing with Elasticsearch-based retrieval systems, allowing users to query, analyze, and explore articles seamlessly. The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/deepanshudalal09/mit-ai-news-published-till-2023). The dataset contains aggregated news articles from 1994-2023. 
 
 ---
 
@@ -115,3 +115,9 @@ export ELASTIC_API_KEY="your-elasticsearch-api-key"
 ```bash
 streamlit run app.py
 ```
+
+### **7. Ask questions to the chatbot**
+Head over to ```database/sample_questions.txt``` for a set of sample test questions. For more insights, use the analysis to determine articles of interest using the `analysis_page` and ask questions based on the extracted articles.
+
+## **Upcoming work**
+In the upcoming stages, the plan is to incorporate functionality for fetching upt-o-date news into the LLM's context window for real-time analysis. 
