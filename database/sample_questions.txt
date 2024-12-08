@@ -4,3 +4,7 @@ Some sample questions to ask in sequence (demonstrates conversational history):
 3. What was your last reply about?
 4. Who are the outside collaborators with which the researchers worked on the project?
 5. What was the first question which I posed to you?
+
+
+
+For further query, go through the dataset and read through the headings and main news content. That can give you the methodology to ask questions.
