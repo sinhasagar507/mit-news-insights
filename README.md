@@ -120,4 +120,4 @@ streamlit run app.py
 Head over to ```database/sample_questions.txt``` for a set of sample test questions. For more insights, use the analysis to determine articles of interest using the `analysis_page` and ask questions based on the extracted articles.
 
 ## **Upcoming work**
-In the upcoming stages, the plan is to incorporate functionality for fetching upt-o-date news into the LLM's context window for real-time analysis. 
+In the upcoming stages, the plan is to incorporate functionality for fetching up-to-date news into the LLM's context window for real-time analysis. 
